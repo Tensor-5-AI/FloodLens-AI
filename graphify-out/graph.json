@@ -1,0 +1,2060 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "label": "agents.md",
+      "file_type": "document",
+      "source_file": "agents.md",
+      "source_location": "L1",
+      "id": "agents_md",
+      "community": 1,
+      "norm_label": "agents.md"
+    },
+    {
+      "label": "code:md (# FloodLens AI \u2014 Agent Workflow)",
+      "file_type": "document",
+      "source_file": "agents.md",
+      "source_location": "L1",
+      "id": "floodlens_ai_agents_codeblock_1",
+      "community": 1,
+      "norm_label": "code:md (# floodlens ai \u2014 agent workflow)"
+    },
+    {
+      "label": "code:block2",
+      "file_type": "document",
+      "source_file": "agents.md",
+      "source_location": "L46",
+      "id": "floodlens_ai_agents_codeblock_2",
+      "community": 1,
+      "norm_label": "code:block2"
+    },
+    {
+      "label": "code:block3",
+      "file_type": "document",
+      "source_file": "agents.md",
+      "source_location": "L66",
+      "id": "floodlens_ai_agents_codeblock_3",
+      "community": 1,
+      "norm_label": "code:block3"
+    },
+    {
+      "label": "code:block4",
+      "file_type": "document",
+      "source_file": "agents.md",
+      "source_location": "L109",
+      "id": "floodlens_ai_agents_codeblock_4",
+      "community": 1,
+      "norm_label": "code:block4"
+    },
+    {
+      "label": "code:block5",
+      "file_type": "document",
+      "source_file": "agents.md",
+      "source_location": "L133",
+      "id": "floodlens_ai_agents_codeblock_5",
+      "community": 1,
+      "norm_label": "code:block5"
+    },
+    {
+      "label": "code:block6",
+      "file_type": "document",
+      "source_file": "agents.md",
+      "source_location": "L151",
+      "id": "floodlens_ai_agents_codeblock_6",
+      "community": 1,
+      "norm_label": "code:block6"
+    },
+    {
+      "label": "code:block7",
+      "file_type": "document",
+      "source_file": "agents.md",
+      "source_location": "L157",
+      "id": "floodlens_ai_agents_codeblock_7",
+      "community": 1,
+      "norm_label": "code:block7"
+    },
+    {
+      "label": "code:block8",
+      "file_type": "document",
+      "source_file": "agents.md",
+      "source_location": "L224",
+      "id": "floodlens_ai_agents_codeblock_8",
+      "community": 1,
+      "norm_label": "code:block8"
+    },
+    {
+      "label": "code:block9",
+      "file_type": "document",
+      "source_file": "agents.md",
+      "source_location": "L234",
+      "id": "floodlens_ai_agents_codeblock_9",
+      "community": 1,
+      "norm_label": "code:block9"
+    },
+    {
+      "label": "code:block10",
+      "file_type": "document",
+      "source_file": "agents.md",
+      "source_location": "L242",
+      "id": "floodlens_ai_agents_codeblock_10",
+      "community": 1,
+      "norm_label": "code:block10"
+    },
+    {
+      "label": "code:block11",
+      "file_type": "document",
+      "source_file": "agents.md",
+      "source_location": "L266",
+      "id": "floodlens_ai_agents_codeblock_11",
+      "community": 1,
+      "norm_label": "code:block11"
+    },
+    {
+      "label": "code:block12",
+      "file_type": "document",
+      "source_file": "agents.md",
+      "source_location": "L330",
+      "id": "floodlens_ai_agents_codeblock_12",
+      "community": 1,
+      "norm_label": "code:block12"
+    },
+    {
+      "label": "code:block13",
+      "file_type": "document",
+      "source_file": "agents.md",
+      "source_location": "L352",
+      "id": "floodlens_ai_agents_codeblock_13",
+      "community": 1,
+      "norm_label": "code:block13"
+    },
+    {
+      "label": "code:block14",
+      "file_type": "document",
+      "source_file": "agents.md",
+      "source_location": "L366",
+      "id": "floodlens_ai_agents_codeblock_14",
+      "community": 1,
+      "norm_label": "code:block14"
+    },
+    {
+      "label": "code:block15",
+      "file_type": "document",
+      "source_file": "agents.md",
+      "source_location": "L396",
+      "id": "floodlens_ai_agents_codeblock_15",
+      "community": 1,
+      "norm_label": "code:block15"
+    },
+    {
+      "label": "code:block16",
+      "file_type": "document",
+      "source_file": "agents.md",
+      "source_location": "L424",
+      "id": "floodlens_ai_agents_codeblock_16",
+      "community": 1,
+      "norm_label": "code:block16"
+    },
+    {
+      "label": "code:block17",
+      "file_type": "document",
+      "source_file": "agents.md",
+      "source_location": "L438",
+      "id": "floodlens_ai_agents_codeblock_17",
+      "community": 1,
+      "norm_label": "code:block17"
+    },
+    {
+      "label": "code:block18",
+      "file_type": "document",
+      "source_file": "agents.md",
+      "source_location": "L462",
+      "id": "floodlens_ai_agents_codeblock_18",
+      "community": 1,
+      "norm_label": "code:block18"
+    },
+    {
+      "label": "code:block19",
+      "file_type": "document",
+      "source_file": "agents.md",
+      "source_location": "L489",
+      "id": "floodlens_ai_agents_codeblock_19",
+      "community": 1,
+      "norm_label": "code:block19"
+    },
+    {
+      "label": "code:block20",
+      "file_type": "document",
+      "source_file": "agents.md",
+      "source_location": "L521",
+      "id": "floodlens_ai_agents_codeblock_20",
+      "community": 1,
+      "norm_label": "code:block20"
+    },
+    {
+      "label": "code:block21",
+      "file_type": "document",
+      "source_file": "agents.md",
+      "source_location": "L545",
+      "id": "floodlens_ai_agents_codeblock_21",
+      "community": 1,
+      "norm_label": "code:block21"
+    },
+    {
+      "label": "code:block22",
+      "file_type": "document",
+      "source_file": "agents.md",
+      "source_location": "L577",
+      "id": "floodlens_ai_agents_codeblock_22",
+      "community": 1,
+      "norm_label": "code:block22"
+    },
+    {
+      "label": "code:block23",
+      "file_type": "document",
+      "source_file": "agents.md",
+      "source_location": "L601",
+      "id": "floodlens_ai_agents_codeblock_23",
+      "community": 1,
+      "norm_label": "code:block23"
+    },
+    {
+      "label": "project_state.md",
+      "file_type": "document",
+      "source_file": "project_state.md",
+      "source_location": "L1",
+      "id": "project_state_md",
+      "community": 0,
+      "norm_label": "project_state.md"
+    },
+    {
+      "label": "code:md (# FloodLens AI \u2014 Project State)",
+      "file_type": "document",
+      "source_file": "project_state.md",
+      "source_location": "L1",
+      "id": "floodlens_ai_project_state_codeblock_1",
+      "community": 0,
+      "norm_label": "code:md (# floodlens ai \u2014 project state)"
+    },
+    {
+      "label": "code:block2",
+      "file_type": "document",
+      "source_file": "project_state.md",
+      "source_location": "L81",
+      "id": "floodlens_ai_project_state_codeblock_2",
+      "community": 0,
+      "norm_label": "code:block2"
+    },
+    {
+      "label": "code:block3",
+      "file_type": "document",
+      "source_file": "project_state.md",
+      "source_location": "L89",
+      "id": "floodlens_ai_project_state_codeblock_3",
+      "community": 0,
+      "norm_label": "code:block3"
+    },
+    {
+      "label": "code:block4",
+      "file_type": "document",
+      "source_file": "project_state.md",
+      "source_location": "L233",
+      "id": "floodlens_ai_project_state_codeblock_4",
+      "community": 0,
+      "norm_label": "code:block4"
+    },
+    {
+      "label": "code:block5",
+      "file_type": "document",
+      "source_file": "project_state.md",
+      "source_location": "L253",
+      "id": "floodlens_ai_project_state_codeblock_5",
+      "community": 0,
+      "norm_label": "code:block5"
+    },
+    {
+      "label": "code:block6",
+      "file_type": "document",
+      "source_file": "project_state.md",
+      "source_location": "L363",
+      "id": "floodlens_ai_project_state_codeblock_6",
+      "community": 0,
+      "norm_label": "code:block6"
+    },
+    {
+      "label": "code:block7",
+      "file_type": "document",
+      "source_file": "project_state.md",
+      "source_location": "L414",
+      "id": "floodlens_ai_project_state_codeblock_7",
+      "community": 0,
+      "norm_label": "code:block7"
+    },
+    {
+      "label": "code:block8",
+      "file_type": "document",
+      "source_file": "project_state.md",
+      "source_location": "L422",
+      "id": "floodlens_ai_project_state_codeblock_8",
+      "community": 0,
+      "norm_label": "code:block8"
+    },
+    {
+      "label": "code:block9",
+      "file_type": "document",
+      "source_file": "project_state.md",
+      "source_location": "L444",
+      "id": "floodlens_ai_project_state_codeblock_9",
+      "community": 0,
+      "norm_label": "code:block9"
+    },
+    {
+      "label": "code:block10",
+      "file_type": "document",
+      "source_file": "project_state.md",
+      "source_location": "L450",
+      "id": "floodlens_ai_project_state_codeblock_10",
+      "community": 0,
+      "norm_label": "code:block10"
+    },
+    {
+      "label": "code:block11",
+      "file_type": "document",
+      "source_file": "project_state.md",
+      "source_location": "L469",
+      "id": "floodlens_ai_project_state_codeblock_11",
+      "community": 0,
+      "norm_label": "code:block11"
+    },
+    {
+      "label": "code:block12",
+      "file_type": "document",
+      "source_file": "project_state.md",
+      "source_location": "L475",
+      "id": "floodlens_ai_project_state_codeblock_12",
+      "community": 0,
+      "norm_label": "code:block12"
+    },
+    {
+      "label": "code:block13",
+      "file_type": "document",
+      "source_file": "project_state.md",
+      "source_location": "L493",
+      "id": "floodlens_ai_project_state_codeblock_13",
+      "community": 0,
+      "norm_label": "code:block13"
+    },
+    {
+      "label": "code:block14",
+      "file_type": "document",
+      "source_file": "project_state.md",
+      "source_location": "L540",
+      "id": "floodlens_ai_project_state_codeblock_14",
+      "community": 0,
+      "norm_label": "code:block14"
+    },
+    {
+      "label": "code:block15",
+      "file_type": "document",
+      "source_file": "project_state.md",
+      "source_location": "L567",
+      "id": "floodlens_ai_project_state_codeblock_15",
+      "community": 0,
+      "norm_label": "code:block15"
+    },
+    {
+      "label": "code:block16",
+      "file_type": "document",
+      "source_file": "project_state.md",
+      "source_location": "L573",
+      "id": "floodlens_ai_project_state_codeblock_16",
+      "community": 0,
+      "norm_label": "code:block16"
+    },
+    {
+      "label": "code:block17",
+      "file_type": "document",
+      "source_file": "project_state.md",
+      "source_location": "L585",
+      "id": "floodlens_ai_project_state_codeblock_17",
+      "community": 0,
+      "norm_label": "code:block17"
+    },
+    {
+      "label": "code:block18",
+      "file_type": "document",
+      "source_file": "project_state.md",
+      "source_location": "L602",
+      "id": "floodlens_ai_project_state_codeblock_18",
+      "community": 0,
+      "norm_label": "code:block18"
+    },
+    {
+      "label": "code:block19",
+      "file_type": "document",
+      "source_file": "project_state.md",
+      "source_location": "L622",
+      "id": "floodlens_ai_project_state_codeblock_19",
+      "community": 0,
+      "norm_label": "code:block19"
+    },
+    {
+      "label": "code:block20",
+      "file_type": "document",
+      "source_file": "project_state.md",
+      "source_location": "L628",
+      "id": "floodlens_ai_project_state_codeblock_20",
+      "community": 0,
+      "norm_label": "code:block20"
+    },
+    {
+      "label": "code:block21",
+      "file_type": "document",
+      "source_file": "project_state.md",
+      "source_location": "L634",
+      "id": "floodlens_ai_project_state_codeblock_21",
+      "community": 0,
+      "norm_label": "code:block21"
+    },
+    {
+      "label": "code:block22",
+      "file_type": "document",
+      "source_file": "project_state.md",
+      "source_location": "L641",
+      "id": "floodlens_ai_project_state_codeblock_22",
+      "community": 0,
+      "norm_label": "code:block22"
+    },
+    {
+      "label": "code:block23",
+      "file_type": "document",
+      "source_file": "project_state.md",
+      "source_location": "L657",
+      "id": "floodlens_ai_project_state_codeblock_23",
+      "community": 0,
+      "norm_label": "code:block23"
+    },
+    {
+      "label": "code:block24",
+      "file_type": "document",
+      "source_file": "project_state.md",
+      "source_location": "L667",
+      "id": "floodlens_ai_project_state_codeblock_24",
+      "community": 0,
+      "norm_label": "code:block24"
+    },
+    {
+      "label": "code:block25",
+      "file_type": "document",
+      "source_file": "project_state.md",
+      "source_location": "L688",
+      "id": "floodlens_ai_project_state_codeblock_25",
+      "community": 0,
+      "norm_label": "code:block25"
+    },
+    {
+      "label": "code:block26",
+      "file_type": "document",
+      "source_file": "project_state.md",
+      "source_location": "L694",
+      "id": "floodlens_ai_project_state_codeblock_26",
+      "community": 0,
+      "norm_label": "code:block26"
+    },
+    {
+      "label": "code:block27",
+      "file_type": "document",
+      "source_file": "project_state.md",
+      "source_location": "L716",
+      "id": "floodlens_ai_project_state_codeblock_27",
+      "community": 0,
+      "norm_label": "code:block27"
+    },
+    {
+      "label": "code:block28",
+      "file_type": "document",
+      "source_file": "project_state.md",
+      "source_location": "L728",
+      "id": "floodlens_ai_project_state_codeblock_28",
+      "community": 0,
+      "norm_label": "code:block28"
+    },
+    {
+      "label": "code:block29",
+      "file_type": "document",
+      "source_file": "project_state.md",
+      "source_location": "L734",
+      "id": "floodlens_ai_project_state_codeblock_29",
+      "community": 0,
+      "norm_label": "code:block29"
+    },
+    {
+      "label": "code:block30",
+      "file_type": "document",
+      "source_file": "project_state.md",
+      "source_location": "L763",
+      "id": "floodlens_ai_project_state_codeblock_30",
+      "community": 0,
+      "norm_label": "code:block30"
+    },
+    {
+      "label": "code:block31",
+      "file_type": "document",
+      "source_file": "project_state.md",
+      "source_location": "L786",
+      "id": "floodlens_ai_project_state_codeblock_31",
+      "community": 0,
+      "norm_label": "code:block31"
+    },
+    {
+      "label": "code:block32",
+      "file_type": "document",
+      "source_file": "project_state.md",
+      "source_location": "L825",
+      "id": "floodlens_ai_project_state_codeblock_32",
+      "community": 0,
+      "norm_label": "code:block32"
+    },
+    {
+      "label": "code:block33",
+      "file_type": "document",
+      "source_file": "project_state.md",
+      "source_location": "L831",
+      "id": "floodlens_ai_project_state_codeblock_33",
+      "community": 0,
+      "norm_label": "code:block33"
+    },
+    {
+      "label": "code:block34",
+      "file_type": "document",
+      "source_file": "project_state.md",
+      "source_location": "L841",
+      "id": "floodlens_ai_project_state_codeblock_34",
+      "community": 0,
+      "norm_label": "code:block34"
+    },
+    {
+      "label": "code:block35",
+      "file_type": "document",
+      "source_file": "project_state.md",
+      "source_location": "L855",
+      "id": "floodlens_ai_project_state_codeblock_35",
+      "community": 0,
+      "norm_label": "code:block35"
+    },
+    {
+      "label": "code:block36",
+      "file_type": "document",
+      "source_file": "project_state.md",
+      "source_location": "L862",
+      "id": "floodlens_ai_project_state_codeblock_36",
+      "community": 0,
+      "norm_label": "code:block36"
+    },
+    {
+      "label": "code:block37",
+      "file_type": "document",
+      "source_file": "project_state.md",
+      "source_location": "L868",
+      "id": "floodlens_ai_project_state_codeblock_37",
+      "community": 0,
+      "norm_label": "code:block37"
+    },
+    {
+      "label": "code:block38",
+      "file_type": "document",
+      "source_file": "project_state.md",
+      "source_location": "L888",
+      "id": "floodlens_ai_project_state_codeblock_38",
+      "community": 0,
+      "norm_label": "code:block38"
+    },
+    {
+      "label": "code:block39",
+      "file_type": "document",
+      "source_file": "project_state.md",
+      "source_location": "L894",
+      "id": "floodlens_ai_project_state_codeblock_39",
+      "community": 0,
+      "norm_label": "code:block39"
+    },
+    {
+      "label": "code:block40",
+      "file_type": "document",
+      "source_file": "project_state.md",
+      "source_location": "L902",
+      "id": "floodlens_ai_project_state_codeblock_40",
+      "community": 0,
+      "norm_label": "code:block40"
+    },
+    {
+      "label": "code:block41",
+      "file_type": "document",
+      "source_file": "project_state.md",
+      "source_location": "L968",
+      "id": "floodlens_ai_project_state_codeblock_41",
+      "community": 0,
+      "norm_label": "code:block41"
+    },
+    {
+      "label": "code:block42",
+      "file_type": "document",
+      "source_file": "project_state.md",
+      "source_location": "L1193",
+      "id": "floodlens_ai_project_state_codeblock_42",
+      "community": 0,
+      "norm_label": "code:block42"
+    },
+    {
+      "label": "code:block43",
+      "file_type": "document",
+      "source_file": "project_state.md",
+      "source_location": "L1208",
+      "id": "floodlens_ai_project_state_codeblock_43",
+      "community": 0,
+      "norm_label": "code:block43"
+    },
+    {
+      "label": "README.md",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "id": "readme_md",
+      "community": 5,
+      "norm_label": "readme.md"
+    },
+    {
+      "label": "FloodLens-AI",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "id": "floodlens_ai_readme_floodlens_ai",
+      "community": 5,
+      "norm_label": "floodlens-ai"
+    },
+    {
+      "label": "system_prompt.md",
+      "file_type": "document",
+      "source_file": "system_prompt.md",
+      "source_location": "L1",
+      "id": "system_prompt_md",
+      "community": 3,
+      "norm_label": "system_prompt.md"
+    },
+    {
+      "label": "code:md (# FloodLens AI \u2014 System Prompt)",
+      "file_type": "document",
+      "source_file": "system_prompt.md",
+      "source_location": "L1",
+      "id": "floodlens_ai_system_prompt_codeblock_1",
+      "community": 3,
+      "norm_label": "code:md (# floodlens ai \u2014 system prompt)"
+    },
+    {
+      "label": "code:block2",
+      "file_type": "document",
+      "source_file": "system_prompt.md",
+      "source_location": "L38",
+      "id": "floodlens_ai_system_prompt_codeblock_2",
+      "community": 3,
+      "norm_label": "code:block2"
+    },
+    {
+      "label": "code:block3",
+      "file_type": "document",
+      "source_file": "system_prompt.md",
+      "source_location": "L44",
+      "id": "floodlens_ai_system_prompt_codeblock_3",
+      "community": 3,
+      "norm_label": "code:block3"
+    },
+    {
+      "label": "code:block4",
+      "file_type": "document",
+      "source_file": "system_prompt.md",
+      "source_location": "L125",
+      "id": "floodlens_ai_system_prompt_codeblock_4",
+      "community": 3,
+      "norm_label": "code:block4"
+    },
+    {
+      "label": "code:block5",
+      "file_type": "document",
+      "source_file": "system_prompt.md",
+      "source_location": "L182",
+      "id": "floodlens_ai_system_prompt_codeblock_5",
+      "community": 3,
+      "norm_label": "code:block5"
+    },
+    {
+      "label": "code:block6",
+      "file_type": "document",
+      "source_file": "system_prompt.md",
+      "source_location": "L241",
+      "id": "floodlens_ai_system_prompt_codeblock_6",
+      "community": 3,
+      "norm_label": "code:block6"
+    },
+    {
+      "label": "Objective",
+      "file_type": "document",
+      "source_file": "system_prompt.md",
+      "source_location": "L261",
+      "id": "floodlens_ai_system_prompt_objective",
+      "community": 3,
+      "norm_label": "objective"
+    },
+    {
+      "label": "Relevant Files",
+      "file_type": "document",
+      "source_file": "system_prompt.md",
+      "source_location": "L263",
+      "id": "floodlens_ai_system_prompt_relevant_files",
+      "community": 3,
+      "norm_label": "relevant files"
+    },
+    {
+      "label": "Files to Create",
+      "file_type": "document",
+      "source_file": "system_prompt.md",
+      "source_location": "L265",
+      "id": "floodlens_ai_system_prompt_files_to_create",
+      "community": 3,
+      "norm_label": "files to create"
+    },
+    {
+      "label": "Files to Modify",
+      "file_type": "document",
+      "source_file": "system_prompt.md",
+      "source_location": "L267",
+      "id": "floodlens_ai_system_prompt_files_to_modify",
+      "community": 3,
+      "norm_label": "files to modify"
+    },
+    {
+      "label": "Dependencies",
+      "file_type": "document",
+      "source_file": "system_prompt.md",
+      "source_location": "L269",
+      "id": "floodlens_ai_system_prompt_dependencies",
+      "community": 3,
+      "norm_label": "dependencies"
+    },
+    {
+      "label": "Implementation Steps",
+      "file_type": "document",
+      "source_file": "system_prompt.md",
+      "source_location": "L271",
+      "id": "floodlens_ai_system_prompt_implementation_steps",
+      "community": 3,
+      "norm_label": "implementation steps"
+    },
+    {
+      "label": "Tests",
+      "file_type": "document",
+      "source_file": "system_prompt.md",
+      "source_location": "L273",
+      "id": "floodlens_ai_system_prompt_tests",
+      "community": 3,
+      "norm_label": "tests"
+    },
+    {
+      "label": "Risks",
+      "file_type": "document",
+      "source_file": "system_prompt.md",
+      "source_location": "L275",
+      "id": "floodlens_ai_system_prompt_risks",
+      "community": 3,
+      "norm_label": "risks"
+    },
+    {
+      "label": "Definition of Done",
+      "file_type": "document",
+      "source_file": "system_prompt.md",
+      "source_location": "L277",
+      "id": "floodlens_ai_system_prompt_definition_of_done",
+      "community": 2,
+      "norm_label": "definition of done"
+    },
+    {
+      "label": "code:block7",
+      "file_type": "document",
+      "source_file": "system_prompt.md",
+      "source_location": "L278",
+      "id": "floodlens_ai_system_prompt_codeblock_7",
+      "community": 2,
+      "norm_label": "code:block7"
+    },
+    {
+      "label": "code:block8",
+      "file_type": "document",
+      "source_file": "system_prompt.md",
+      "source_location": "L372",
+      "id": "floodlens_ai_system_prompt_codeblock_8",
+      "community": 2,
+      "norm_label": "code:block8"
+    },
+    {
+      "label": "code:block9",
+      "file_type": "document",
+      "source_file": "system_prompt.md",
+      "source_location": "L380",
+      "id": "floodlens_ai_system_prompt_codeblock_9",
+      "community": 2,
+      "norm_label": "code:block9"
+    },
+    {
+      "label": "code:block10",
+      "file_type": "document",
+      "source_file": "system_prompt.md",
+      "source_location": "L455",
+      "id": "floodlens_ai_system_prompt_codeblock_10",
+      "community": 2,
+      "norm_label": "code:block10"
+    },
+    {
+      "label": "code:block11",
+      "file_type": "document",
+      "source_file": "system_prompt.md",
+      "source_location": "L510",
+      "id": "floodlens_ai_system_prompt_codeblock_11",
+      "community": 2,
+      "norm_label": "code:block11"
+    },
+    {
+      "label": "code:block12",
+      "file_type": "document",
+      "source_file": "system_prompt.md",
+      "source_location": "L532",
+      "id": "floodlens_ai_system_prompt_codeblock_12",
+      "community": 2,
+      "norm_label": "code:block12"
+    },
+    {
+      "label": "code:block13",
+      "file_type": "document",
+      "source_file": "system_prompt.md",
+      "source_location": "L620",
+      "id": "floodlens_ai_system_prompt_codeblock_13",
+      "community": 2,
+      "norm_label": "code:block13"
+    },
+    {
+      "label": "code:block14",
+      "file_type": "document",
+      "source_file": "system_prompt.md",
+      "source_location": "L647",
+      "id": "floodlens_ai_system_prompt_codeblock_14",
+      "community": 2,
+      "norm_label": "code:block14"
+    },
+    {
+      "label": "code:block15",
+      "file_type": "document",
+      "source_file": "system_prompt.md",
+      "source_location": "L658",
+      "id": "floodlens_ai_system_prompt_codeblock_15",
+      "community": 2,
+      "norm_label": "code:block15"
+    },
+    {
+      "label": "code:block16",
+      "file_type": "document",
+      "source_file": "system_prompt.md",
+      "source_location": "L685",
+      "id": "floodlens_ai_system_prompt_codeblock_16",
+      "community": 2,
+      "norm_label": "code:block16"
+    },
+    {
+      "label": "code:block17",
+      "file_type": "document",
+      "source_file": "system_prompt.md",
+      "source_location": "L709",
+      "id": "floodlens_ai_system_prompt_codeblock_17",
+      "community": 2,
+      "norm_label": "code:block17"
+    },
+    {
+      "label": "code:block18",
+      "file_type": "document",
+      "source_file": "system_prompt.md",
+      "source_location": "L715",
+      "id": "floodlens_ai_system_prompt_codeblock_18",
+      "community": 2,
+      "norm_label": "code:block18"
+    },
+    {
+      "label": "code:block19",
+      "file_type": "document",
+      "source_file": "system_prompt.md",
+      "source_location": "L722",
+      "id": "floodlens_ai_system_prompt_codeblock_19",
+      "community": 2,
+      "norm_label": "code:block19"
+    },
+    {
+      "label": "code:block20",
+      "file_type": "document",
+      "source_file": "system_prompt.md",
+      "source_location": "L777",
+      "id": "floodlens_ai_system_prompt_codeblock_20",
+      "community": 2,
+      "norm_label": "code:block20"
+    },
+    {
+      "label": "code:block21",
+      "file_type": "document",
+      "source_file": "system_prompt.md",
+      "source_location": "L808",
+      "id": "floodlens_ai_system_prompt_codeblock_21",
+      "community": 2,
+      "norm_label": "code:block21"
+    },
+    {
+      "label": "code:block22",
+      "file_type": "document",
+      "source_file": "system_prompt.md",
+      "source_location": "L830",
+      "id": "floodlens_ai_system_prompt_codeblock_22",
+      "community": 2,
+      "norm_label": "code:block22"
+    },
+    {
+      "label": "code:block23",
+      "file_type": "document",
+      "source_file": "system_prompt.md",
+      "source_location": "L881",
+      "id": "floodlens_ai_system_prompt_codeblock_23",
+      "community": 2,
+      "norm_label": "code:block23"
+    },
+    {
+      "label": "code:block24",
+      "file_type": "document",
+      "source_file": "system_prompt.md",
+      "source_location": "L924",
+      "id": "floodlens_ai_system_prompt_codeblock_24",
+      "community": 2,
+      "norm_label": "code:block24"
+    },
+    {
+      "label": "code:block25",
+      "file_type": "document",
+      "source_file": "system_prompt.md",
+      "source_location": "L985",
+      "id": "floodlens_ai_system_prompt_codeblock_25",
+      "community": 2,
+      "norm_label": "code:block25"
+    },
+    {
+      "label": "code:block26",
+      "file_type": "document",
+      "source_file": "system_prompt.md",
+      "source_location": "L1028",
+      "id": "floodlens_ai_system_prompt_codeblock_26",
+      "community": 2,
+      "norm_label": "code:block26"
+    },
+    {
+      "label": "code:block27",
+      "file_type": "document",
+      "source_file": "system_prompt.md",
+      "source_location": "L1052",
+      "id": "floodlens_ai_system_prompt_codeblock_27",
+      "community": 2,
+      "norm_label": "code:block27"
+    },
+    {
+      "label": "graphify.md",
+      "file_type": "document",
+      "source_file": ".agents/rules/graphify.md",
+      "source_location": "L1",
+      "id": "agents_rules_graphify_md",
+      "community": 6,
+      "norm_label": "graphify.md"
+    },
+    {
+      "label": "graphify",
+      "file_type": "document",
+      "source_file": ".agents/rules/graphify.md",
+      "source_location": "L6",
+      "id": "rules_graphify_graphify",
+      "community": 6,
+      "norm_label": "graphify"
+    },
+    {
+      "label": "graphify.md",
+      "file_type": "document",
+      "source_file": ".agents/workflows/graphify.md",
+      "source_location": "L1",
+      "id": "agents_workflows_graphify_md",
+      "community": 4,
+      "norm_label": "graphify.md"
+    },
+    {
+      "label": "Workflow: graphify",
+      "file_type": "document",
+      "source_file": ".agents/workflows/graphify.md",
+      "source_location": "L6",
+      "id": "workflows_graphify_workflow_graphify",
+      "community": 4,
+      "norm_label": "workflow: graphify"
+    }
+  ],
+  "links": [
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "agents.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "agents_md",
+      "target": "floodlens_ai_agents_codeblock_1",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "agents.md",
+      "source_location": "L242",
+      "weight": 1.0,
+      "source": "agents_md",
+      "target": "floodlens_ai_agents_codeblock_10",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "agents.md",
+      "source_location": "L266",
+      "weight": 1.0,
+      "source": "agents_md",
+      "target": "floodlens_ai_agents_codeblock_11",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "agents.md",
+      "source_location": "L330",
+      "weight": 1.0,
+      "source": "agents_md",
+      "target": "floodlens_ai_agents_codeblock_12",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "agents.md",
+      "source_location": "L352",
+      "weight": 1.0,
+      "source": "agents_md",
+      "target": "floodlens_ai_agents_codeblock_13",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "agents.md",
+      "source_location": "L366",
+      "weight": 1.0,
+      "source": "agents_md",
+      "target": "floodlens_ai_agents_codeblock_14",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "agents.md",
+      "source_location": "L396",
+      "weight": 1.0,
+      "source": "agents_md",
+      "target": "floodlens_ai_agents_codeblock_15",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "agents.md",
+      "source_location": "L424",
+      "weight": 1.0,
+      "source": "agents_md",
+      "target": "floodlens_ai_agents_codeblock_16",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "agents.md",
+      "source_location": "L438",
+      "weight": 1.0,
+      "source": "agents_md",
+      "target": "floodlens_ai_agents_codeblock_17",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "agents.md",
+      "source_location": "L462",
+      "weight": 1.0,
+      "source": "agents_md",
+      "target": "floodlens_ai_agents_codeblock_18",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "agents.md",
+      "source_location": "L489",
+      "weight": 1.0,
+      "source": "agents_md",
+      "target": "floodlens_ai_agents_codeblock_19",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "agents.md",
+      "source_location": "L46",
+      "weight": 1.0,
+      "source": "agents_md",
+      "target": "floodlens_ai_agents_codeblock_2",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "agents.md",
+      "source_location": "L521",
+      "weight": 1.0,
+      "source": "agents_md",
+      "target": "floodlens_ai_agents_codeblock_20",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "agents.md",
+      "source_location": "L545",
+      "weight": 1.0,
+      "source": "agents_md",
+      "target": "floodlens_ai_agents_codeblock_21",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "agents.md",
+      "source_location": "L577",
+      "weight": 1.0,
+      "source": "agents_md",
+      "target": "floodlens_ai_agents_codeblock_22",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "agents.md",
+      "source_location": "L601",
+      "weight": 1.0,
+      "source": "agents_md",
+      "target": "floodlens_ai_agents_codeblock_23",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "agents.md",
+      "source_location": "L66",
+      "weight": 1.0,
+      "source": "agents_md",
+      "target": "floodlens_ai_agents_codeblock_3",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "agents.md",
+      "source_location": "L109",
+      "weight": 1.0,
+      "source": "agents_md",
+      "target": "floodlens_ai_agents_codeblock_4",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "agents.md",
+      "source_location": "L133",
+      "weight": 1.0,
+      "source": "agents_md",
+      "target": "floodlens_ai_agents_codeblock_5",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "agents.md",
+      "source_location": "L151",
+      "weight": 1.0,
+      "source": "agents_md",
+      "target": "floodlens_ai_agents_codeblock_6",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "agents.md",
+      "source_location": "L157",
+      "weight": 1.0,
+      "source": "agents_md",
+      "target": "floodlens_ai_agents_codeblock_7",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "agents.md",
+      "source_location": "L224",
+      "weight": 1.0,
+      "source": "agents_md",
+      "target": "floodlens_ai_agents_codeblock_8",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "agents.md",
+      "source_location": "L234",
+      "weight": 1.0,
+      "source": "agents_md",
+      "target": "floodlens_ai_agents_codeblock_9",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "project_state.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "project_state_md",
+      "target": "floodlens_ai_project_state_codeblock_1",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "project_state.md",
+      "source_location": "L450",
+      "weight": 1.0,
+      "source": "project_state_md",
+      "target": "floodlens_ai_project_state_codeblock_10",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "project_state.md",
+      "source_location": "L469",
+      "weight": 1.0,
+      "source": "project_state_md",
+      "target": "floodlens_ai_project_state_codeblock_11",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "project_state.md",
+      "source_location": "L475",
+      "weight": 1.0,
+      "source": "project_state_md",
+      "target": "floodlens_ai_project_state_codeblock_12",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "project_state.md",
+      "source_location": "L493",
+      "weight": 1.0,
+      "source": "project_state_md",
+      "target": "floodlens_ai_project_state_codeblock_13",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "project_state.md",
+      "source_location": "L540",
+      "weight": 1.0,
+      "source": "project_state_md",
+      "target": "floodlens_ai_project_state_codeblock_14",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "project_state.md",
+      "source_location": "L567",
+      "weight": 1.0,
+      "source": "project_state_md",
+      "target": "floodlens_ai_project_state_codeblock_15",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "project_state.md",
+      "source_location": "L573",
+      "weight": 1.0,
+      "source": "project_state_md",
+      "target": "floodlens_ai_project_state_codeblock_16",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "project_state.md",
+      "source_location": "L585",
+      "weight": 1.0,
+      "source": "project_state_md",
+      "target": "floodlens_ai_project_state_codeblock_17",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "project_state.md",
+      "source_location": "L602",
+      "weight": 1.0,
+      "source": "project_state_md",
+      "target": "floodlens_ai_project_state_codeblock_18",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "project_state.md",
+      "source_location": "L622",
+      "weight": 1.0,
+      "source": "project_state_md",
+      "target": "floodlens_ai_project_state_codeblock_19",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "project_state.md",
+      "source_location": "L81",
+      "weight": 1.0,
+      "source": "project_state_md",
+      "target": "floodlens_ai_project_state_codeblock_2",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "project_state.md",
+      "source_location": "L628",
+      "weight": 1.0,
+      "source": "project_state_md",
+      "target": "floodlens_ai_project_state_codeblock_20",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "project_state.md",
+      "source_location": "L634",
+      "weight": 1.0,
+      "source": "project_state_md",
+      "target": "floodlens_ai_project_state_codeblock_21",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "project_state.md",
+      "source_location": "L641",
+      "weight": 1.0,
+      "source": "project_state_md",
+      "target": "floodlens_ai_project_state_codeblock_22",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "project_state.md",
+      "source_location": "L657",
+      "weight": 1.0,
+      "source": "project_state_md",
+      "target": "floodlens_ai_project_state_codeblock_23",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "project_state.md",
+      "source_location": "L667",
+      "weight": 1.0,
+      "source": "project_state_md",
+      "target": "floodlens_ai_project_state_codeblock_24",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "project_state.md",
+      "source_location": "L688",
+      "weight": 1.0,
+      "source": "project_state_md",
+      "target": "floodlens_ai_project_state_codeblock_25",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "project_state.md",
+      "source_location": "L694",
+      "weight": 1.0,
+      "source": "project_state_md",
+      "target": "floodlens_ai_project_state_codeblock_26",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "project_state.md",
+      "source_location": "L716",
+      "weight": 1.0,
+      "source": "project_state_md",
+      "target": "floodlens_ai_project_state_codeblock_27",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "project_state.md",
+      "source_location": "L728",
+      "weight": 1.0,
+      "source": "project_state_md",
+      "target": "floodlens_ai_project_state_codeblock_28",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "project_state.md",
+      "source_location": "L734",
+      "weight": 1.0,
+      "source": "project_state_md",
+      "target": "floodlens_ai_project_state_codeblock_29",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "project_state.md",
+      "source_location": "L89",
+      "weight": 1.0,
+      "source": "project_state_md",
+      "target": "floodlens_ai_project_state_codeblock_3",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "project_state.md",
+      "source_location": "L763",
+      "weight": 1.0,
+      "source": "project_state_md",
+      "target": "floodlens_ai_project_state_codeblock_30",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "project_state.md",
+      "source_location": "L786",
+      "weight": 1.0,
+      "source": "project_state_md",
+      "target": "floodlens_ai_project_state_codeblock_31",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "project_state.md",
+      "source_location": "L825",
+      "weight": 1.0,
+      "source": "project_state_md",
+      "target": "floodlens_ai_project_state_codeblock_32",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "project_state.md",
+      "source_location": "L831",
+      "weight": 1.0,
+      "source": "project_state_md",
+      "target": "floodlens_ai_project_state_codeblock_33",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "project_state.md",
+      "source_location": "L841",
+      "weight": 1.0,
+      "source": "project_state_md",
+      "target": "floodlens_ai_project_state_codeblock_34",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "project_state.md",
+      "source_location": "L855",
+      "weight": 1.0,
+      "source": "project_state_md",
+      "target": "floodlens_ai_project_state_codeblock_35",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "project_state.md",
+      "source_location": "L862",
+      "weight": 1.0,
+      "source": "project_state_md",
+      "target": "floodlens_ai_project_state_codeblock_36",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "project_state.md",
+      "source_location": "L868",
+      "weight": 1.0,
+      "source": "project_state_md",
+      "target": "floodlens_ai_project_state_codeblock_37",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "project_state.md",
+      "source_location": "L888",
+      "weight": 1.0,
+      "source": "project_state_md",
+      "target": "floodlens_ai_project_state_codeblock_38",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "project_state.md",
+      "source_location": "L894",
+      "weight": 1.0,
+      "source": "project_state_md",
+      "target": "floodlens_ai_project_state_codeblock_39",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "project_state.md",
+      "source_location": "L233",
+      "weight": 1.0,
+      "source": "project_state_md",
+      "target": "floodlens_ai_project_state_codeblock_4",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "project_state.md",
+      "source_location": "L902",
+      "weight": 1.0,
+      "source": "project_state_md",
+      "target": "floodlens_ai_project_state_codeblock_40",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "project_state.md",
+      "source_location": "L968",
+      "weight": 1.0,
+      "source": "project_state_md",
+      "target": "floodlens_ai_project_state_codeblock_41",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "project_state.md",
+      "source_location": "L1193",
+      "weight": 1.0,
+      "source": "project_state_md",
+      "target": "floodlens_ai_project_state_codeblock_42",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "project_state.md",
+      "source_location": "L1208",
+      "weight": 1.0,
+      "source": "project_state_md",
+      "target": "floodlens_ai_project_state_codeblock_43",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "project_state.md",
+      "source_location": "L253",
+      "weight": 1.0,
+      "source": "project_state_md",
+      "target": "floodlens_ai_project_state_codeblock_5",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "project_state.md",
+      "source_location": "L363",
+      "weight": 1.0,
+      "source": "project_state_md",
+      "target": "floodlens_ai_project_state_codeblock_6",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "project_state.md",
+      "source_location": "L414",
+      "weight": 1.0,
+      "source": "project_state_md",
+      "target": "floodlens_ai_project_state_codeblock_7",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "project_state.md",
+      "source_location": "L422",
+      "weight": 1.0,
+      "source": "project_state_md",
+      "target": "floodlens_ai_project_state_codeblock_8",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "project_state.md",
+      "source_location": "L444",
+      "weight": 1.0,
+      "source": "project_state_md",
+      "target": "floodlens_ai_project_state_codeblock_9",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "readme_md",
+      "target": "floodlens_ai_readme_floodlens_ai",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "system_prompt.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "system_prompt_md",
+      "target": "floodlens_ai_system_prompt_codeblock_1",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "system_prompt.md",
+      "source_location": "L38",
+      "weight": 1.0,
+      "source": "system_prompt_md",
+      "target": "floodlens_ai_system_prompt_codeblock_2",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "system_prompt.md",
+      "source_location": "L44",
+      "weight": 1.0,
+      "source": "system_prompt_md",
+      "target": "floodlens_ai_system_prompt_codeblock_3",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "system_prompt.md",
+      "source_location": "L125",
+      "weight": 1.0,
+      "source": "system_prompt_md",
+      "target": "floodlens_ai_system_prompt_codeblock_4",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "system_prompt.md",
+      "source_location": "L182",
+      "weight": 1.0,
+      "source": "system_prompt_md",
+      "target": "floodlens_ai_system_prompt_codeblock_5",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "system_prompt.md",
+      "source_location": "L241",
+      "weight": 1.0,
+      "source": "system_prompt_md",
+      "target": "floodlens_ai_system_prompt_codeblock_6",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "system_prompt.md",
+      "source_location": "L277",
+      "weight": 1.0,
+      "source": "system_prompt_md",
+      "target": "floodlens_ai_system_prompt_definition_of_done",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "system_prompt.md",
+      "source_location": "L269",
+      "weight": 1.0,
+      "source": "system_prompt_md",
+      "target": "floodlens_ai_system_prompt_dependencies",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "system_prompt.md",
+      "source_location": "L265",
+      "weight": 1.0,
+      "source": "system_prompt_md",
+      "target": "floodlens_ai_system_prompt_files_to_create",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "system_prompt.md",
+      "source_location": "L267",
+      "weight": 1.0,
+      "source": "system_prompt_md",
+      "target": "floodlens_ai_system_prompt_files_to_modify",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "system_prompt.md",
+      "source_location": "L271",
+      "weight": 1.0,
+      "source": "system_prompt_md",
+      "target": "floodlens_ai_system_prompt_implementation_steps",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "system_prompt.md",
+      "source_location": "L261",
+      "weight": 1.0,
+      "source": "system_prompt_md",
+      "target": "floodlens_ai_system_prompt_objective",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "system_prompt.md",
+      "source_location": "L263",
+      "weight": 1.0,
+      "source": "system_prompt_md",
+      "target": "floodlens_ai_system_prompt_relevant_files",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "system_prompt.md",
+      "source_location": "L275",
+      "weight": 1.0,
+      "source": "system_prompt_md",
+      "target": "floodlens_ai_system_prompt_risks",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "system_prompt.md",
+      "source_location": "L273",
+      "weight": 1.0,
+      "source": "system_prompt_md",
+      "target": "floodlens_ai_system_prompt_tests",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "system_prompt.md",
+      "source_location": "L455",
+      "weight": 1.0,
+      "source": "floodlens_ai_system_prompt_definition_of_done",
+      "target": "floodlens_ai_system_prompt_codeblock_10",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "system_prompt.md",
+      "source_location": "L510",
+      "weight": 1.0,
+      "source": "floodlens_ai_system_prompt_definition_of_done",
+      "target": "floodlens_ai_system_prompt_codeblock_11",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "system_prompt.md",
+      "source_location": "L532",
+      "weight": 1.0,
+      "source": "floodlens_ai_system_prompt_definition_of_done",
+      "target": "floodlens_ai_system_prompt_codeblock_12",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "system_prompt.md",
+      "source_location": "L620",
+      "weight": 1.0,
+      "source": "floodlens_ai_system_prompt_definition_of_done",
+      "target": "floodlens_ai_system_prompt_codeblock_13",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "system_prompt.md",
+      "source_location": "L647",
+      "weight": 1.0,
+      "source": "floodlens_ai_system_prompt_definition_of_done",
+      "target": "floodlens_ai_system_prompt_codeblock_14",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "system_prompt.md",
+      "source_location": "L658",
+      "weight": 1.0,
+      "source": "floodlens_ai_system_prompt_definition_of_done",
+      "target": "floodlens_ai_system_prompt_codeblock_15",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "system_prompt.md",
+      "source_location": "L685",
+      "weight": 1.0,
+      "source": "floodlens_ai_system_prompt_definition_of_done",
+      "target": "floodlens_ai_system_prompt_codeblock_16",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "system_prompt.md",
+      "source_location": "L709",
+      "weight": 1.0,
+      "source": "floodlens_ai_system_prompt_definition_of_done",
+      "target": "floodlens_ai_system_prompt_codeblock_17",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "system_prompt.md",
+      "source_location": "L715",
+      "weight": 1.0,
+      "source": "floodlens_ai_system_prompt_definition_of_done",
+      "target": "floodlens_ai_system_prompt_codeblock_18",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "system_prompt.md",
+      "source_location": "L722",
+      "weight": 1.0,
+      "source": "floodlens_ai_system_prompt_definition_of_done",
+      "target": "floodlens_ai_system_prompt_codeblock_19",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "system_prompt.md",
+      "source_location": "L777",
+      "weight": 1.0,
+      "source": "floodlens_ai_system_prompt_definition_of_done",
+      "target": "floodlens_ai_system_prompt_codeblock_20",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "system_prompt.md",
+      "source_location": "L808",
+      "weight": 1.0,
+      "source": "floodlens_ai_system_prompt_definition_of_done",
+      "target": "floodlens_ai_system_prompt_codeblock_21",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "system_prompt.md",
+      "source_location": "L830",
+      "weight": 1.0,
+      "source": "floodlens_ai_system_prompt_definition_of_done",
+      "target": "floodlens_ai_system_prompt_codeblock_22",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "system_prompt.md",
+      "source_location": "L881",
+      "weight": 1.0,
+      "source": "floodlens_ai_system_prompt_definition_of_done",
+      "target": "floodlens_ai_system_prompt_codeblock_23",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "system_prompt.md",
+      "source_location": "L924",
+      "weight": 1.0,
+      "source": "floodlens_ai_system_prompt_definition_of_done",
+      "target": "floodlens_ai_system_prompt_codeblock_24",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "system_prompt.md",
+      "source_location": "L985",
+      "weight": 1.0,
+      "source": "floodlens_ai_system_prompt_definition_of_done",
+      "target": "floodlens_ai_system_prompt_codeblock_25",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "system_prompt.md",
+      "source_location": "L1028",
+      "weight": 1.0,
+      "source": "floodlens_ai_system_prompt_definition_of_done",
+      "target": "floodlens_ai_system_prompt_codeblock_26",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "system_prompt.md",
+      "source_location": "L1052",
+      "weight": 1.0,
+      "source": "floodlens_ai_system_prompt_definition_of_done",
+      "target": "floodlens_ai_system_prompt_codeblock_27",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "system_prompt.md",
+      "source_location": "L278",
+      "weight": 1.0,
+      "source": "floodlens_ai_system_prompt_definition_of_done",
+      "target": "floodlens_ai_system_prompt_codeblock_7",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "system_prompt.md",
+      "source_location": "L372",
+      "weight": 1.0,
+      "source": "floodlens_ai_system_prompt_definition_of_done",
+      "target": "floodlens_ai_system_prompt_codeblock_8",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "system_prompt.md",
+      "source_location": "L380",
+      "weight": 1.0,
+      "source": "floodlens_ai_system_prompt_definition_of_done",
+      "target": "floodlens_ai_system_prompt_codeblock_9",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/rules/graphify.md",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "agents_rules_graphify_md",
+      "target": "rules_graphify_graphify",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/workflows/graphify.md",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "agents_workflows_graphify_md",
+      "target": "workflows_graphify_workflow_graphify",
+      "confidence_score": 1.0
+    }
+  ],
+  "hyperedges": [],
+  "built_at_commit": "51802731960e656a0a004fc8bcf9943b08a3dc1f"
+}
