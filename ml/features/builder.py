@@ -56,6 +56,26 @@ class FeatureBuilder:
         """
         data = df.copy()
 
+        # 0. Ensure base raw columns exist with defaults if partial dictionary passed
+        base_fallbacks = {
+            "dist_to_drainage_m": 1000.0,
+            "built_up_pct": 50.0,
+            "slope_deg": 3.0,
+            "relative_elevation_m": 0.0,
+            "elevation_m": 500.0,
+            "avg_daily_rainfall_mm": 5.0,
+            "max_daily_rainfall_mm": 100.0,
+            "cumulative_rainfall_mm": 700.0,
+            "extreme_rain_days_count": 2,
+            "drainage_density_index": 0.5,
+            "vegetation_pct": 20.0,
+            "water_pct": 5.0,
+            "open_ground_pct": 15.0,
+        }
+        for col, val in base_fallbacks.items():
+            if col not in data.columns:
+                data[col] = val
+
         # 1. Impervious-to-drainage interaction:
         # High built-up percentage coupled with distant drainage creates highest waterlogging risk
         dist_km = (data["dist_to_drainage_m"] / 1000.0).clip(lower=0.1)

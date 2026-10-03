@@ -50,7 +50,7 @@ class IngestionPipeline:
         self.land_cover_ingestion = LandCoverIngestion()
         self.floods_ingestion = HistoricalFloodsIngestion()
 
-    def run(self, grid_rows: int = 10, grid_cols: int = 10, save_files: bool = True) -> Dict[str, Any]:
+    def run(self, grid_rows: int = 15, grid_cols: int = 15, save_files: bool = True) -> Dict[str, Any]:
         """
         Execute full ingestion and feature aggregation.
         """

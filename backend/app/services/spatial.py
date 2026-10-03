@@ -46,3 +46,32 @@ class SpatialDataService:
         if os.path.exists(self.data_dir):
             layers = [f for f in os.listdir(self.data_dir) if f.endswith((".geojson", ".parquet", ".csv"))]
         return layers
+
+    def get_all_zone_features(self, study_area: str = "Hyderabad"):
+        """
+        Retrieve DataFrame containing tabular features for all zones in the study area.
+        """
+        import pandas as pd
+
+        csv_path = os.path.join(self.data_dir, f"{study_area.lower()}_features.csv")
+        parquet_path = os.path.join(self.data_dir, f"{study_area.lower()}_features.parquet")
+
+        if os.path.exists(csv_path):
+            return pd.read_csv(csv_path)
+        elif os.path.exists(parquet_path):
+            return pd.read_parquet(parquet_path)
+        return pd.DataFrame()
+
+    def get_zone_features(self, zone_id: str, study_area: str = "Hyderabad") -> Optional[Dict[str, Any]]:
+        """
+        Retrieve raw feature dictionary for a specific zone ID.
+        """
+        df = self.get_all_zone_features(study_area=study_area)
+        if df.empty or "zone_id" not in df.columns:
+            return None
+
+        match = df[df["zone_id"].astype(str).str.upper() == str(zone_id).upper()]
+        if match.empty:
+            return None
+        return match.iloc[0].to_dict()
+

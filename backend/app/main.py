@@ -6,6 +6,7 @@ from backend.app.config import get_settings
 from backend.app.api.v1.routes.health import router as health_router
 from backend.app.api.v1.routes.susceptibility import router as susceptibility_router
 from backend.app.api.v1.routes.simulation import router as simulation_router
+from backend.app.api.v1.routes.zones import router as zones_router
 
 settings = get_settings()
 
@@ -34,11 +35,14 @@ def create_application() -> FastAPI:
         allow_headers=["*"],
     )
 
-    # Routers
+    # Routers - mounted with API version prefix and root aliases for convenience
     api_prefix = settings.API_V1_STR
     application.include_router(health_router, prefix=api_prefix)
     application.include_router(susceptibility_router, prefix=api_prefix)
     application.include_router(simulation_router, prefix=api_prefix)
+    application.include_router(zones_router, prefix=api_prefix)
+    application.include_router(zones_router)  # Root alias: /zones/{zone_id}/explanation
+
 
     @application.get("/", tags=["Root"])
     async def root():
