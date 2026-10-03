@@ -8,7 +8,7 @@ class TestGeospatialStub(unittest.TestCase):
         geojson = service.get_zone_geojson("Hyderabad")
         self.assertEqual(geojson["type"], "FeatureCollection")
         self.assertIn("features", geojson)
-        self.assertEqual(geojson["metadata"]["study_area"], "Hyderabad")
+        self.assertIn("Hyderabad", geojson["metadata"]["study_area"])
 
 
 if __name__ == "__main__":

@@ -18,7 +18,17 @@ class SpatialDataService:
     def get_zone_geojson(self, study_area: str = "Hyderabad") -> Dict[str, Any]:
         """
         Retrieve zone polygons in standardized GeoJSON format (EPSG:4326 for web maps).
+        Loads generated hyderabad_zones.geojson from data/processed if present.
         """
+        geojson_path = os.path.join(self.data_dir, f"{study_area.lower()}_zones.geojson")
+        if os.path.exists(geojson_path):
+            try:
+                import json
+                with open(geojson_path, "r", encoding="utf-8") as f:
+                    return json.load(f)
+            except Exception as e:
+                logger.error(f"Failed to read zone GeoJSON from {geojson_path}: {e}")
+
         return {
             "type": "FeatureCollection",
             "features": [],
