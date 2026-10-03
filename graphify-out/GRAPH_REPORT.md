@@ -1,16 +1,16 @@
 # Graph Report - FloodLens-AI  (2026-10-03)
 
 ## Corpus Check
-- 54 files · ~17,446 words
+- 64 files · ~21,792 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 425 nodes · 435 edges · 43 communities (22 shown, 21 thin omitted)
-- Extraction: 97% EXTRACTED · 3% INFERRED · 0% AMBIGUOUS · INFERRED: 13 edges (avg confidence: 0.5)
+- 549 nodes · 672 edges · 47 communities (27 shown, 20 thin omitted)
+- Extraction: 93% EXTRACTED · 7% INFERRED · 0% AMBIGUOUS · INFERRED: 50 edges (avg confidence: 0.5)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `e7a7557e`
+- Built from commit: `fba20600`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -55,32 +55,36 @@
 - [[_COMMUNITY_Community 38|Community 38]]
 - [[_COMMUNITY_Community 39|Community 39]]
 - [[_COMMUNITY_Community 40|Community 40]]
+- [[_COMMUNITY_Community 43|Community 43]]
+- [[_COMMUNITY_Community 44|Community 44]]
+- [[_COMMUNITY_Community 45|Community 45]]
+- [[_COMMUNITY_Community 46|Community 46]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `Definition of Done` - 22 edges
 2. `Definition of Done` - 22 edges
-3. `compilerOptions` - 16 edges
-4. `SpatialDataService` - 9 edges
-5. `FloodSusceptibilityANN` - 8 edges
-6. `BaselineFloodModel` - 8 edges
-7. `Settings` - 7 edges
-8. `ScenarioSimulationRequest` - 7 edges
-9. `ScenarioSimulationResponse` - 7 edges
-10. `ModelInferenceService` - 7 edges
+3. `TestDataIngestionPipeline` - 19 edges
+4. `RainfallIngestion` - 18 edges
+5. `DrainageIngestion` - 17 edges
+6. `ElevationIngestion` - 17 edges
+7. `HistoricalFloodsIngestion` - 17 edges
+8. `compilerOptions` - 16 edges
+9. `LandCoverIngestion` - 15 edges
+10. `IngestionPipeline` - 15 edges
 
 ## Surprising Connections (you probably didn't know these)
 - `TestGeospatialStub` --uses--> `SpatialDataService`  [INFERRED]
   tests/geospatial/test_geospatial_stub.py → backend/app/services/spatial.py
-- `TestMLModels` --uses--> `FloodSusceptibilityANN`  [INFERRED]
-  tests/ml/test_models.py → ml/models/ann.py
-- `TestMLModels` --uses--> `BaselineFloodModel`  [INFERRED]
-  tests/ml/test_models.py → ml/models/baseline.py
-- `HealthResponse` --uses--> `Settings`  [INFERRED]
-  backend/app/api/v1/routes/health.py → backend/app/config.py
-- `Settings` --uses--> `Settings`  [INFERRED]
-  backend/app/api/v1/routes/health.py → backend/app/config.py
+- `TestDataIngestionPipeline` --uses--> `DrainageIngestion`  [INFERRED]
+  tests/ml/test_ingestion.py → ml/ingestion/drainage.py
+- `TestDataIngestionPipeline` --uses--> `ElevationIngestion`  [INFERRED]
+  tests/ml/test_ingestion.py → ml/ingestion/elevation.py
+- `TestDataIngestionPipeline` --uses--> `HistoricalFloodsIngestion`  [INFERRED]
+  tests/ml/test_ingestion.py → ml/ingestion/historical_floods.py
+- `TestDataIngestionPipeline` --uses--> `LandCoverIngestion`  [INFERRED]
+  tests/ml/test_ingestion.py → ml/ingestion/land_cover.py
 
-## Communities (43 total, 21 thin omitted)
+## Communities (47 total, 20 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.05
@@ -91,12 +95,12 @@ Cohesion: 0.08
 Nodes (23): code:md (# FloodLens AI — Agent Workflow), code:block10, code:block11, code:block12, code:block13, code:block14, code:block15, code:block16 (+15 more)
 
 ### Community 2 - "Community 2"
-Cohesion: 0.09
-Nodes (22): code:block10, code:block11, code:block12, code:block13, code:block14, code:block15, code:block16, code:block17 (+14 more)
+Cohesion: 0.05
+Nodes (36): code:md (# FloodLens AI — System Prompt), code:block10, code:block11, code:block12, code:block13, code:block14, code:block15, code:block16 (+28 more)
 
 ### Community 3 - "Community 3"
-Cohesion: 0.13
-Nodes (14): code:md (# FloodLens AI — System Prompt), code:block2, code:block3, code:block4, code:block5, code:block6, Dependencies, Files to Create (+6 more)
+Cohesion: 0.23
+Nodes (9): Enrich zone dictionaries with rainfall metrics., Fetch historical monsoon season rainfall data for a specific coordinate., Compute key rainfall features from daily series., Documented regional monsoon baseline for Hyderabad (GHMC area, ~800-900mm monsoo, Any, bool, float, int (+1 more)
 
 ### Community 5 - "Community 5"
 Cohesion: 0.13
@@ -107,12 +111,12 @@ Cohesion: 0.05
 Nodes (43): code:md (# FloodLens AI — Project State), code:block10, code:block11, code:block12, code:block13, code:block14, code:block15, code:block16 (+35 more)
 
 ### Community 8 - "Community 8"
-Cohesion: 0.10
-Nodes (16): Any, float, str, Any, str, TestGeospatialStub, ModelInferenceService, Load model weights and metadata once training pipeline has produced artifacts. (+8 more)
+Cohesion: 0.09
+Nodes (17): Any, float, str, Any, str, TestGeospatialStub, ModelInferenceService, Load model weights and metadata once training pipeline has produced artifacts. (+9 more)
 
 ### Community 9 - "Community 9"
-Cohesion: 0.14
-Nodes (18): BaseModel, Simulate impact of hypothetical land use or drainage modifications.     Note: De, simulate_scenario(), ScenarioSimulationRequest, ScenarioSimulationResponse, HealthResponse, InterventionParameter, Request payload for hypothetical land-use/construction scenario simulation. (+10 more)
+Cohesion: 0.09
+Nodes (29): get_settings(), Application configuration settings loaded from environment variables or .env fil, Settings, create_application(), lifespan(), BaseModel, BaseSettings, FastAPI (+21 more)
 
 ### Community 10 - "Community 10"
 Cohesion: 0.08
@@ -123,8 +127,8 @@ Cohesion: 0.11
 Nodes (14): LogisticRegression, float, int, float, int, Test ANN initialization and forward pass using synthetic tensor fixture, TestMLModels, FloodSusceptibilityANN (+6 more)
 
 ### Community 12 - "Community 12"
-Cohesion: 0.09
-Nodes (22): code:block10, code:block11, code:block12, code:block13, code:block14, code:block15, code:block16, code:block17 (+14 more)
+Cohesion: 0.05
+Nodes (36): code:md (# FloodLens AI — System Prompt), code:block10, code:block11, code:block12, code:block13, code:block14, code:block15, code:block16 (+28 more)
 
 ### Community 13 - "Community 13"
 Cohesion: 0.09
@@ -135,12 +139,12 @@ Cohesion: 0.10
 Nodes (19): compilerOptions, allowJs, esModuleInterop, incremental, isolatedModules, jsx, lib, module (+11 more)
 
 ### Community 15 - "Community 15"
-Cohesion: 0.13
-Nodes (14): code:md (# FloodLens AI — System Prompt), code:block2, code:block3, code:block4, code:block5, code:block6, Dependencies, Files to Create (+6 more)
+Cohesion: 0.20
+Nodes (8): Batch query Open-Elevation API for list of [{'latitude': lat, 'longitude': lon},, Accurate topographic model for the Hyderabad metropolitan plateau.         Hyder, Enrich zones with elevation and terrain characteristics.         Also calculates, Any, bool, float, int, str
 
 ### Community 16 - "Community 16"
-Cohesion: 0.24
-Nodes (11): get_settings(), Application configuration settings loaded from environment variables or .env fil, Settings, create_application(), lifespan(), BaseSettings, FastAPI, HealthResponse (+3 more)
+Cohesion: 0.29
+Nodes (6): Calculate great-circle distance between two coordinates in meters., Compute distance to nearest drainage and local drainage proximity score., Enrich zones with drainage and waterway proximity features., Any, float, str
 
 ### Community 17 - "Community 17"
 Cohesion: 0.40
@@ -158,25 +162,45 @@ Nodes (4): str, get_susceptibility(), Retrieve susceptibility scores and explana
 Cohesion: 0.50
 Nodes (3): FloodLens AI Data Directory, Principles, Structure
 
+### Community 36 - "Community 36"
+Cohesion: 0.07
+Nodes (38): DrainageIngestion, Drainage and waterways ingestion module. Extracts waterways, rivers (Musi River,, Ingests waterway and drainage network geometries, computing:     1. Distance to, ElevationIngestion, Elevation and terrain feature ingestion module. Fetches SRTM Digital Elevation M, Ingests elevation and computes terrain-derived variables (elevation, slope, rela, HistoricalFloodsIngestion, Historical flood incident records and documented waterlogging hotspots ingestion (+30 more)
+
+### Community 43 - "Community 43"
+Cohesion: 0.33
+Nodes (5): Count incidents that fall inside or within a 1.5 km buffer of zone boundary., Enrich zones with historical incident observations., Any, float, str
+
+### Community 44 - "Community 44"
+Cohesion: 0.33
+Nodes (5): Estimate ESA WorldCover proportions based on distance to core dense urban center, Enrich zones with land cover proportions., Any, float, str
+
+### Community 45 - "Community 45"
+Cohesion: 0.47
+Nodes (4): Validate a single GeoJSON zone feature. Returns list of errors (empty if valid)., Validate an entire GeoJSON FeatureCollection., Any, str
+
+### Community 46 - "Community 46"
+Cohesion: 0.50
+Nodes (3): Verify that coordinates lie within the specified geographic bounding box., bool, float
+
 ## Knowledge Gaps
-- **266 isolated node(s):** `float`, `Any`, `eslintConfig`, `nextConfig`, `name` (+261 more)
+- **279 isolated node(s):** `float`, `Any`, `eslintConfig`, `nextConfig`, `name` (+274 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **21 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **20 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `Definition of Done` connect `Community 2` to `Community 3`?**
-  _High betweenness centrality (0.006) - this node is a cross-community bridge._
-- **Why does `Definition of Done` connect `Community 12` to `Community 15`?**
-  _High betweenness centrality (0.006) - this node is a cross-community bridge._
+- **Why does `RainfallIngestion` connect `Community 36` to `Community 3`?**
+  _High betweenness centrality (0.012) - this node is a cross-community bridge._
+- **Why does `ElevationIngestion` connect `Community 36` to `Community 15`?**
+  _High betweenness centrality (0.010) - this node is a cross-community bridge._
+- **Why does `DrainageIngestion` connect `Community 36` to `Community 16`?**
+  _High betweenness centrality (0.009) - this node is a cross-community bridge._
+- **Are the 7 inferred relationships involving `TestDataIngestionPipeline` (e.g. with `DrainageIngestion` and `ElevationIngestion`) actually correct?**
+  _`TestDataIngestionPipeline` has 7 INFERRED edges - model-reasoned connections that need verification._
+- **Are the 6 inferred relationships involving `RainfallIngestion` (e.g. with `IngestionPipeline` and `Any`) actually correct?**
+  _`RainfallIngestion` has 6 INFERRED edges - model-reasoned connections that need verification._
+- **Are the 6 inferred relationships involving `DrainageIngestion` (e.g. with `IngestionPipeline` and `Any`) actually correct?**
+  _`DrainageIngestion` has 6 INFERRED edges - model-reasoned connections that need verification._
 - **What connects `FloodLens AI Backend Root Package.`, `Application configuration settings loaded from environment variables or .env fil`, `FloodLens AI Backend Application Package.` to the rest of the system?**
-  _303 weakly-connected nodes found - possible documentation gaps or missing edges._
-- **Should `Community 0` be split into smaller, more focused modules?**
-  _Cohesion score 0.045454545454545456 - nodes in this community are weakly interconnected._
-- **Should `Community 1` be split into smaller, more focused modules?**
-  _Cohesion score 0.08333333333333333 - nodes in this community are weakly interconnected._
-- **Should `Community 2` be split into smaller, more focused modules?**
-  _Cohesion score 0.09090909090909091 - nodes in this community are weakly interconnected._
-- **Should `Community 3` be split into smaller, more focused modules?**
-  _Cohesion score 0.13333333333333333 - nodes in this community are weakly interconnected._
+  _354 weakly-connected nodes found - possible documentation gaps or missing edges._

@@ -71,6 +71,19 @@ data/synthetic/*
 !data/synthetic/.gitkeep
 ml/artifacts/*
 !ml/artifacts/.gitkeep
+# Explicit dataset file extensions
+*.parquet
+*.geoparquet
+*.tif
+*.tiff
+*.nc
+*.h5
+*.hdf5
+*.shp
+*.shx
+*.dbf
+*.cpg
+*.gpkg
 
 # IDE & OS
 .vscode/
