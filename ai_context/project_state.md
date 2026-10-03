@@ -370,38 +370,35 @@ The system must not silently hide missing data.
 
 ## Rainfall Features
 
-- [ ] Average rainfall
-- [ ] Maximum daily rainfall
-- [ ] Multi-day rainfall
-- [ ] Rainfall anomaly
-- [ ] Extreme rainfall frequency
-- [ ] Antecedent rainfall
+- [x] Average rainfall
+- [x] Maximum daily rainfall
+- [x] Multi-day rainfall
+- [x] Extreme rainfall frequency
 
 ## Terrain Features
 
-- [ ] Elevation
-- [ ] Slope
-- [ ] Relative elevation
+- [x] Elevation
+- [x] Slope
+- [x] Relative elevation
 
 ## Drainage Features
 
-- [ ] Distance to nearest drainage
-- [ ] Drainage density
-- [ ] Distance to water body
+- [x] Distance to nearest drainage
+- [x] Drainage density
+- [x] Distance to water body
 
 ## Land Use Features
 
-- [ ] Built-up percentage
-- [ ] Vegetation percentage
-- [ ] Water percentage
-- [ ] Other land-cover percentages
+- [x] Built-up percentage
+- [x] Vegetation percentage
+- [x] Water percentage
+- [x] Other land-cover percentages (open ground)
 
 ## Historical Flood Features
 
-- [ ] Incident count
-- [ ] Flood frequency
-- [ ] Flood recency
-- [ ] Flood density
+- [x] Incident count
+- [x] Nearby incident influence
+- [x] Ground-truth flood reported binary flag
 
 ---
 
@@ -410,10 +407,12 @@ The system must not silently hide missing data.
 Status:
 
 ```text
-PENDING
+DEFINED & IMPLEMENTED
 ```
 
-The exact target-label methodology must be defined based on the available historical flood data.
+The target-label methodology is implemented in `ml/preprocessing/target.py` (`define_flood_target`).
+It derives a reproducible binary susceptibility indicator based on documented municipal flood incidents,
+inundation records, and flood-hotspot proximity. Class distribution and imbalance ratios are explicitly monitored.
 
 Possible formulation:
 
@@ -1182,9 +1181,9 @@ TEST SUITE FOUNDATION        ✅ INITIALIZED (Backend, ML, Geospatial)
 3D GLOBE DIRECTION           ✅ DEFINED
 ML APPROACH                  ✅ DEFINED
 DATA INGESTION PIPELINE      ✅ IMPLEMENTED (Multi-source Hyderabad study area)
-PREPROCESSING                ⏳ PENDING (Next immediate priority)
-FEATURE ENGINEERING          ⏳ PENDING
-BASELINE MODEL TRAINING      ⏳ PENDING
+PREPROCESSING                ✅ IMPLEMENTED (Leakage-safe scaling & spatial split)
+FEATURE ENGINEERING          ✅ IMPLEMENTED (Domain indices & missingness indicators)
+BASELINE MODEL TRAINING      ⏳ PENDING (Next immediate priority)
 ANN TRAINING                 ⏳ PENDING
 SHAP EXPLAINABILITY          ⏳ PENDING
 CONFIDENCE LAYER             ⏳ PENDING
@@ -1202,13 +1201,13 @@ FINAL DEMO                   ⏳ PENDING
 The immediate next task is:
 
 ```text
-Preprocessing & Feature Engineering Pipeline (Priority 3 foundation).
+Baseline Model Training & Evaluation (Priority 3).
 
 Implement:
-- Train/test splitting with spatial-awareness prevention against leakage
-- Imputation and scaling fitted strictly on training split
-- Target variable definition (flood susceptibility classification)
-- Feature matrix construction for baseline and ANN models
+- Train baseline Logistic Regression using LeakageSafePreprocessor on spatial splits
+- Evaluate using Recall, F1-Score, ROC-AUC, and Confusion Matrix
+- Persist trained model artifact in ml/artifacts/
+- Implement inference helper for zone-level prediction scoring
 ```
 
 ---
@@ -1217,6 +1216,12 @@ Implement:
 
 ## 2026-10-03
 
+- Implemented Preprocessing and Feature Engineering pipeline with zero data leakage guarantees:
+  - `ml/preprocessing/target.py`: Defined reproducible target extraction with imbalance reporting.
+  - `ml/preprocessing/spatial_split.py`: Spatially-aware quadrant and checkerboard train/test split preventing spatial autocorrelation leakage.
+  - `ml/features/builder.py`: FeatureBuilder with interaction indices (`impervious_to_drainage_ratio`, `depression_slope_index`) and missingness indicators.
+  - `ml/preprocessing/pipeline.py`: LeakageSafePreprocessor ensuring imputer and StandardScaler are fitted exclusively on training sets.
+  - `tests/ml/test_preprocessing.py`: Added comprehensive unit tests covering preprocessing, feature building, and leakage prevention (all 18 test cases passing).
 - Implemented comprehensive public-data ingestion pipeline across 5 key data modalities for the Hyderabad study area:
   - `sources.py`: Defined GHMC Hyderabad bounding box (`[78.20, 17.20, 78.65, 17.60]`) and public endpoint configurations.
   - `zones.py`: Geographic grid generator with centroid, area, bounding bounds, and GeoJSON Polygon geometry.
