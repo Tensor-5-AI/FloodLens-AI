@@ -5,8 +5,8 @@
     "semantic_hash": ""
   },
   "C:\\Users\\manch\\OneDrive\\Documents\\FloodLens-AI\\project_state.md": {
-    "mtime": 1791020620.142963,
-    "ast_hash": "38522f08fba188d639c9327e80247cc0",
+    "mtime": 1791021402.6892235,
+    "ast_hash": "22818585c6054110be7e33da04a98176",
     "semantic_hash": ""
   },
   "C:\\Users\\manch\\OneDrive\\Documents\\FloodLens-AI\\README.md": {
@@ -40,8 +40,8 @@
     "semantic_hash": ""
   },
   "C:\\Users\\manch\\OneDrive\\Documents\\FloodLens-AI\\backend\\app\\main.py": {
-    "mtime": 1791020376.8857834,
-    "ast_hash": "0dd4e183eca4d75d0409e58b7ecf8eb8",
+    "mtime": 1791021284.0020516,
+    "ast_hash": "c090c8cddd7e01628a77efdcf05d9dea",
     "semantic_hash": ""
   },
   "C:\\Users\\manch\\OneDrive\\Documents\\FloodLens-AI\\backend\\app\\__init__.py": {
@@ -75,8 +75,8 @@
     "semantic_hash": ""
   },
   "C:\\Users\\manch\\OneDrive\\Documents\\FloodLens-AI\\backend\\app\\api\\v1\\routes\\__init__.py": {
-    "mtime": 1791020365.689867,
-    "ast_hash": "98d4ab8d21b1062bc39cded4e8decf2c",
+    "mtime": 1791021268.0915675,
+    "ast_hash": "5abf33000321d5580021c97b895c7535",
     "semantic_hash": ""
   },
   "C:\\Users\\manch\\OneDrive\\Documents\\FloodLens-AI\\backend\\app\\schemas\\health.py": {
@@ -95,18 +95,18 @@
     "semantic_hash": ""
   },
   "C:\\Users\\manch\\OneDrive\\Documents\\FloodLens-AI\\backend\\app\\schemas\\__init__.py": {
-    "mtime": 1791020438.8017018,
-    "ast_hash": "55d9884f1dd3dc9e1d3912f2b6ba167f",
+    "mtime": 1791021161.3389435,
+    "ast_hash": "5cdc5db6dcb51afaa9c802070078176a",
     "semantic_hash": ""
   },
   "C:\\Users\\manch\\OneDrive\\Documents\\FloodLens-AI\\backend\\app\\services\\inference.py": {
-    "mtime": 1791020341.1598368,
-    "ast_hash": "3b2638dc74e7c7def9b323f8f86aa537",
+    "mtime": 1791021243.02496,
+    "ast_hash": "ddc61d12df6da2b11a0848bac38161e3",
     "semantic_hash": ""
   },
   "C:\\Users\\manch\\OneDrive\\Documents\\FloodLens-AI\\backend\\app\\services\\spatial.py": {
-    "mtime": 1791020321.078871,
-    "ast_hash": "cf59f27a08dd90cb54047f2c15c0ffdf",
+    "mtime": 1791021199.539379,
+    "ast_hash": "d0600fbe44931b64c51324ae4a799f69",
     "semantic_hash": ""
   },
   "C:\\Users\\manch\\OneDrive\\Documents\\FloodLens-AI\\backend\\app\\services\\__init__.py": {
@@ -155,8 +155,8 @@
     "semantic_hash": ""
   },
   "C:\\Users\\manch\\OneDrive\\Documents\\FloodLens-AI\\ml\\evaluation\\__init__.py": {
-    "mtime": 1791013606.6306758,
-    "ast_hash": "1d1b2ac7241c484c24131f4b033d9bc0",
+    "mtime": 1791021135.1184134,
+    "ast_hash": "f4ef05de972276e0a5c8af11236126de",
     "semantic_hash": ""
   },
   "C:\\Users\\manch\\OneDrive\\Documents\\FloodLens-AI\\ml\\explainability\\__init__.py": {
@@ -240,8 +240,8 @@
     "semantic_hash": ""
   },
   "C:\\Users\\manch\\OneDrive\\Documents\\FloodLens-AI\\ai_context\\project_state.md": {
-    "mtime": 1791020620.142963,
-    "ast_hash": "38522f08fba188d639c9327e80247cc0",
+    "mtime": 1791021402.6892235,
+    "ast_hash": "22818585c6054110be7e33da04a98176",
     "semantic_hash": ""
   },
   "C:\\Users\\manch\\OneDrive\\Documents\\FloodLens-AI\\ai_context\\system_prompt.md": {
@@ -410,8 +410,8 @@
     "semantic_hash": ""
   },
   "C:\\Users\\manch\\OneDrive\\Documents\\FloodLens-AI\\backend\\app\\api\\v1\\routes\\zones.py": {
-    "mtime": 1791020353.2129116,
-    "ast_hash": "9f0ae95774a4fd7597061c316e65a170",
+    "mtime": 1791020875.0318987,
+    "ast_hash": "a2332a51dd1bf6174c65b63c71190bcf",
     "semantic_hash": ""
   },
   "C:\\Users\\manch\\OneDrive\\Documents\\FloodLens-AI\\backend\\app\\schemas\\explanation.py": {
@@ -432,6 +432,56 @@
   "C:\\Users\\manch\\OneDrive\\Documents\\FloodLens-AI\\tests\\ml\\test_explainer.py": {
     "mtime": 1791020468.4255714,
     "ast_hash": "26c7de62d816ec2dca51ea7c9ec87028",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\manch\\OneDrive\\Documents\\FloodLens-AI\\backend\\app\\schemas\\confidence.py": {
+    "mtime": 1791020804.2656486,
+    "ast_hash": "80ce72f8252a1ef02faa3c403cfe9f1c",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\manch\\OneDrive\\Documents\\FloodLens-AI\\ml\\confidence\\engine.py": {
+    "mtime": 1791020781.3338246,
+    "ast_hash": "ccf2d85e8f1762f5359bb1778b004c5a",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\manch\\OneDrive\\Documents\\FloodLens-AI\\ml\\confidence\\__init__.py": {
+    "mtime": 1791020795.0301437,
+    "ast_hash": "f657299fcc097a24f7431fbc32d8078a",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\manch\\OneDrive\\Documents\\FloodLens-AI\\tests\\backend\\test_confidence_endpoint.py": {
+    "mtime": 1791020910.2953277,
+    "ast_hash": "1622c099828b3993a23bdcd44f880890",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\manch\\OneDrive\\Documents\\FloodLens-AI\\tests\\ml\\test_confidence.py": {
+    "mtime": 1791020896.7891488,
+    "ast_hash": "f93417f7add96f1c6be3b92db2f5faae",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\manch\\OneDrive\\Documents\\FloodLens-AI\\backend\\app\\api\\v1\\routes\\spatial.py": {
+    "mtime": 1791021255.25014,
+    "ast_hash": "bde453afd2213b9a4632ff9a9c72a4c8",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\manch\\OneDrive\\Documents\\FloodLens-AI\\backend\\app\\schemas\\spatial.py": {
+    "mtime": 1791021146.7969632,
+    "ast_hash": "e0a1ab9b612e7a5e1e623f36d921a913",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\manch\\OneDrive\\Documents\\FloodLens-AI\\ml\\evaluation\\spatial_error.py": {
+    "mtime": 1791021115.0613682,
+    "ast_hash": "c6c431949f7893606e22525b3e49cdc7",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\manch\\OneDrive\\Documents\\FloodLens-AI\\tests\\backend\\test_spatial_endpoint.py": {
+    "mtime": 1791021316.7781818,
+    "ast_hash": "607fbe6156afc7ccd3bcb63c7bcb827f",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\manch\\OneDrive\\Documents\\FloodLens-AI\\tests\\ml\\test_spatial_error.py": {
+    "mtime": 1791021306.6494815,
+    "ast_hash": "5ad6139fdc58688d59379da0495b1229",
     "semantic_hash": ""
   }
 }

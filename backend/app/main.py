@@ -7,6 +7,7 @@ from backend.app.api.v1.routes.health import router as health_router
 from backend.app.api.v1.routes.susceptibility import router as susceptibility_router
 from backend.app.api.v1.routes.simulation import router as simulation_router
 from backend.app.api.v1.routes.zones import router as zones_router
+from backend.app.api.v1.routes.spatial import router as spatial_router
 
 settings = get_settings()
 
@@ -42,6 +43,9 @@ def create_application() -> FastAPI:
     application.include_router(simulation_router, prefix=api_prefix)
     application.include_router(zones_router, prefix=api_prefix)
     application.include_router(zones_router)  # Root alias: /zones/{zone_id}/explanation
+    application.include_router(spatial_router, prefix=api_prefix)
+    application.include_router(spatial_router)  # Root alias: /layers/{layer_name} and /spatial/errors
+
 
 
     @application.get("/", tags=["Root"])

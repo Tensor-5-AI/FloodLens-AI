@@ -8,6 +8,18 @@ from backend.app.schemas.explanation import (
     GlobalFeatureImportance,
     GlobalExplanationResponse,
 )
+from backend.app.schemas.confidence import (
+    ConfidenceDimensionScores,
+    ZoneConfidenceResponse,
+    StudyAreaConfidenceSummary,
+)
+from backend.app.schemas.spatial import (
+    ZoneSpatialError,
+    QuadrantErrorStats,
+    SpatialClusteringSummary,
+    SpatialErrorSummary,
+    SpatialErrorMapLayerResponse,
+)
 
 __all__ = [
     "HealthResponse",
@@ -20,6 +32,16 @@ __all__ = [
     "ZoneExplanationResponse",
     "GlobalFeatureImportance",
     "GlobalExplanationResponse",
+    "ConfidenceDimensionScores",
+    "ZoneConfidenceResponse",
+    "StudyAreaConfidenceSummary",
+    "ZoneSpatialError",
+    "QuadrantErrorStats",
+    "SpatialClusteringSummary",
+    "SpatialErrorSummary",
+    "SpatialErrorMapLayerResponse",
 ]
+
+
 
 

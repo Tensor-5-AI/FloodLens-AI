@@ -75,3 +75,20 @@ class SpatialDataService:
             return None
         return match.iloc[0].to_dict()
 
+    def get_spatial_error_geojson(self, study_area: str = "Hyderabad") -> Dict[str, Any]:
+        """
+        Retrieve GeoJSON layer representing spatial prediction errors with styled properties.
+        """
+        artifact_geojson = os.path.join("ml/artifacts", "spatial_error_map.geojson")
+        if os.path.exists(artifact_geojson):
+            try:
+                import json
+                with open(artifact_geojson, "r", encoding="utf-8") as f:
+                    return json.load(f)
+            except Exception as e:
+                logger.error(f"Failed to read spatial error GeoJSON from {artifact_geojson}: {e}")
+
+        # Fallback to base zone geojson
+        return self.get_zone_geojson(study_area=study_area)
+
+

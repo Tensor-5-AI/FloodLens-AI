@@ -2,7 +2,9 @@ from typing import Any, Dict, List, Optional
 from fastapi import APIRouter, HTTPException, Query, Depends
 
 from backend.app.schemas.explanation import ZoneExplanationResponse, GlobalExplanationResponse
+from backend.app.schemas.confidence import ZoneConfidenceResponse, StudyAreaConfidenceSummary
 from backend.app.services.inference import ModelInferenceService
+
 from backend.app.services.spatial import SpatialDataService
 from backend.app.config import get_settings
 
@@ -85,10 +87,45 @@ async def explain_custom_features(
 
 
 @router.get(
+    "/zones/confidence/summary",
+    response_model=StudyAreaConfidenceSummary,
+    summary="Get Study Area Confidence Summary",
+    description="Retrieve city-wide aggregated data quality and risk-confidence matrix distributions.",
+)
+async def get_confidence_summary(
+    study_area: str = Query("Hyderabad", description="Study area city"),
+    inference_service: ModelInferenceService = Depends(get_inference_service),
+) -> StudyAreaConfidenceSummary:
+    summary = inference_service.evaluate_study_area_confidence(study_area=study_area)
+    return StudyAreaConfidenceSummary(**summary)
+
+
+@router.get(
+    "/zones/{zone_id}/confidence",
+    response_model=ZoneConfidenceResponse,
+    summary="Get Zone Data Confidence & Evidence Quality",
+    description="Retrieve multi-modal data completeness, sensor coverage, and Risk vs Confidence quadrant for a zone.",
+)
+async def get_zone_confidence(
+    zone_id: str,
+    study_area: str = Query("Hyderabad", description="Target study area / city"),
+    inference_service: ModelInferenceService = Depends(get_inference_service),
+) -> ZoneConfidenceResponse:
+    profile = inference_service.evaluate_zone_confidence(zone_id=zone_id, study_area=study_area)
+    if profile is None:
+        raise HTTPException(
+            status_code=404,
+            detail=f"Zone '{zone_id}' not found in study area '{study_area}'.",
+        )
+    return ZoneConfidenceResponse(**profile)
+
+
+@router.get(
     "/zones/{zone_id}/prediction",
     summary="Get Zone Prediction",
     description="Retrieve susceptibility score, risk tier, and confidence for a specific zone.",
 )
+
 async def get_zone_prediction(
     zone_id: str,
     study_area: str = Query("Hyderabad", description="Study area city"),

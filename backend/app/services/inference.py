@@ -5,6 +5,7 @@ from typing import Any, Dict, List, Optional
 import pandas as pd
 
 from ml.explainability.explainer import FloodExplainer, CAUSALITY_DISCLAIMER
+from ml.confidence.engine import ConfidenceScorer
 from backend.app.services.spatial import SpatialDataService
 
 logger = logging.getLogger(__name__)
@@ -13,7 +14,8 @@ logger = logging.getLogger(__name__)
 class ModelInferenceService:
     """
     Service responsible for loading trained models (PyTorch ANN / Baseline Logistic Regression),
-    generating zone susceptibility predictions, and providing local & global SHAP explanations.
+    generating zone susceptibility predictions, providing local & global SHAP explanations,
+    and calculating multi-modal data confidence profiles.
     """
 
     def __init__(
@@ -24,15 +26,19 @@ class ModelInferenceService:
         self.model_artifacts_dir = model_artifacts_dir
         self.data_dir = data_dir
         self.spatial_service = SpatialDataService(data_dir=data_dir)
+        self.confidence_scorer = ConfidenceScorer()
 
         self.predictor: Optional[Any] = None
         self.explainer: Optional[FloodExplainer] = None
         self.is_loaded = False
 
+
         self._cached_zone_explanations: Optional[Dict[str, Any]] = None
         self._cached_global_explanation: Optional[Dict[str, Any]] = None
+        self._cached_spatial_errors: Optional[Dict[str, Any]] = None
 
         self._initialize_service()
+
 
     def _initialize_service(self, model_name: str = "primary_ann") -> None:
         """Initialize both the predictor and explainability engine."""
@@ -85,6 +91,15 @@ class ModelInferenceService:
                     self._cached_global_explanation = json.load(f)
             except Exception as e:
                 logger.warning(f"Failed to load cached global explanation: {e}")
+
+        spatial_path = os.path.join(self.model_artifacts_dir, "spatial_errors.json")
+        if os.path.exists(spatial_path):
+            try:
+                with open(spatial_path, "r", encoding="utf-8") as f:
+                    self._cached_spatial_errors = json.load(f)
+            except Exception as e:
+                logger.warning(f"Failed to load cached spatial errors: {e}")
+
 
     def load_model(self, model_name: str = "primary_ann") -> None:
         """Switch or reload active model (primary_ann vs baseline)."""
@@ -163,3 +178,90 @@ class ModelInferenceService:
             "summary_text": "Global explanation unavailable.",
             "causality_disclaimer": CAUSALITY_DISCLAIMER,
         }
+
+    def evaluate_zone_confidence(
+        self,
+        zone_id: str,
+        study_area: str = "Hyderabad",
+    ) -> Optional[Dict[str, Any]]:
+        """
+        Evaluate full multi-modal data confidence profile for a given zone.
+        Cross-references with susceptibility prediction for 2x2 Risk-Confidence Quadrant placement.
+        """
+        zone_features = self.spatial_service.get_zone_features(zone_id=zone_id, study_area=study_area)
+        if zone_features is None:
+            return None
+
+        # Retrieve prediction score if model is ready
+        susceptibility_score = None
+        risk_level = "UNKNOWN"
+        if self.predictor is not None and self.predictor.is_ready():
+            pred = self.predictor.predict_zone(zone_features)
+            susceptibility_score = float(pred.get("susceptibility_score", 0.0))
+            risk_level = pred.get("risk_category", "UNKNOWN")
+
+        profile = self.confidence_scorer.evaluate_zone(
+            zone_record=zone_features,
+            susceptibility_score=susceptibility_score,
+        )
+        profile["risk_level"] = risk_level
+        return profile
+
+    def evaluate_study_area_confidence(
+        self,
+        study_area: str = "Hyderabad",
+    ) -> Dict[str, Any]:
+        """
+        Calculate city-wide aggregated confidence metrics across all study area zones.
+        """
+        df_zones = self.spatial_service.get_all_zone_features(study_area=study_area)
+        return self.confidence_scorer.evaluate_study_area(df_zones=df_zones)
+
+    def get_spatial_error_analysis(
+        self,
+        study_area: str = "Hyderabad",
+    ) -> Dict[str, Any]:
+        """
+        Retrieve city-wide spatial error summary, confusion matrix, and quadrant clustering.
+        """
+        if self._cached_spatial_errors:
+            return self._cached_spatial_errors
+
+        from ml.evaluation.spatial_error import SpatialErrorAnalyzer
+        df_zones = self.spatial_service.get_all_zone_features(study_area=study_area)
+        if df_zones.empty:
+            return {
+                "study_area": study_area,
+                "decision_threshold": 0.30,
+                "total_zones": 0,
+                "confusion_matrix": {"true_positives": 0, "true_negatives": 0, "false_positives": 0, "false_negatives": 0},
+                "metrics": {"accuracy": 0.0, "precision": 0.0, "recall": 0.0, "f1_score": 0.0, "brier_score": 0.0},
+                "quadrant_breakdown": {},
+                "spatial_clustering": {"weakest_quadrant": None, "weakest_quadrant_accuracy": 0.0, "high_false_positive_clusters": [], "high_false_negative_clusters": []},
+                "zone_errors": [],
+            }
+
+        preds = self.predictor.predict_dataframe(df_zones) if (self.predictor and self.predictor.is_ready()) else []
+        probs = [p["probability"] for p in preds] if preds else [0.0] * len(df_zones)
+
+        thresh = getattr(self.predictor, "decision_threshold", 0.30)
+        analyzer = SpatialErrorAnalyzer(decision_threshold=thresh, artifacts_dir=self.model_artifacts_dir, data_dir=self.data_dir)
+        summary = analyzer.evaluate_study_area(df_zones=df_zones, probabilities=probs)
+        return summary
+
+    def get_zone_spatial_error(
+        self,
+        zone_id: str,
+        study_area: str = "Hyderabad",
+    ) -> Optional[Dict[str, Any]]:
+        """
+        Retrieve spatial error residual and category for a specific zone.
+        """
+        summary = self.get_spatial_error_analysis(study_area=study_area)
+        norm_id = str(zone_id).upper().strip()
+        for ze in summary.get("zone_errors", []):
+            if ze.get("zone_id", "").upper() == norm_id:
+                return ze
+        return None
+
+
